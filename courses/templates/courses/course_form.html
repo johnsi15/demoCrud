@@ -1,0 +1,18 @@
+<form method="post">{% csrf_token %}
+	<label for="nombre">Nombre: </label> 
+	<br>
+    {{ form.name }} 
+    <br><br>
+    <label for="fechaInicio">Fecha Inicio:</label>
+    <br>
+    <input type="datetime" name="start_date" placeholder="mm/dd/aaaa/ hh:mm:ss">
+    <br><br>
+    <label for="fechaFin">Fecha Fin:</label>
+    <br>
+    <input type="datetime" name="end_date">
+    <br><br>
+    <label for="img">Picture</label>
+    <br>
+    <input type="file" name="picture">
+    <input type="submit" value="Guardar" />
+</form>
